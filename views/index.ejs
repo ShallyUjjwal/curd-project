@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+    <div class="w-full h-full bg-zinc-800  p-10 text-white">
+        <div class="nav mb-5">
+            <a  class="text-zinc-300" href="/read">read</a>
+        </div>
+        
+        
+        <h1 class="text-3xl tracking-tighter mb-3">Create User</h1>
+        <hr>
+
+        <form action="/create" method="post" class="mt-5 flex gap-3">
+            
+            <input type="text" placeholder="name"  name="name" class=" px-5 py-2  border-2 border-zinc-600  bg-transparent rounded-lg  outline-none">
+            <input type="text" placeholder="email" name="email"   class=" px-5 py-2  border-2 border-zinc-600  bg-transparent rounded-lg  outline-none">
+            <input type="text" placeholder="imageurl "  name="imageurl" class=" px-5 py-2  border-2 border-zinc-600  bg-transparent rounded-lg  outline-none">
+            <input type="submit" value="createuser"   class=" px-5 py-2 ml-3 border-2 border-zinc-600  bg-blue-500 rounded-lg  outline-none cursor-pointer">
+        </form>
+    </div>
+</body>
+</html>
